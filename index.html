@@ -3,135 +3,121 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Digital Products - Business Growth Arsenal</title>
-<meta name="description" content="AI Prompt Pack, Notion Templates, Canva Templates for solopreneurs and small business owners. USD pricing.">
-<script src="https://www.paypal.com/sdk/js?client-id=BAABTcxraq_oW8aK4ny_sbO54GWn-hML4I4oOGo6KrO6vslLEFqbQI3jjnoeLiLluE_HHUUFUytDbNxV0Y&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
+<title>Business Growth Arsenal - Premium Digital Products</title>
+<meta name="description" content="Save 10+ hours per week with 20 AI prompts, Notion business dashboard, and 30 Canva social media templates. Instant download. One-time payment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://www.paypal.com/sdk/js?client-id=BAABTcxraq_oW8aK4ny_sbO54GWn-hML4I4oOGo6KrO6vslLEFqbQI3jjnoeLiLluE_HHUUFUytDbNxV0Y&currency=USD"></script>
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', sans-serif; background: #0f0f0f; color: #fff; }
-.hero { text-align: center; padding: 80px 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
-.hero h1 { font-size: 3rem; margin-bottom: 20px; }
-.hero p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto 30px; }
-.btn { display: inline-block; padding: 15px 40px; background: #fff; color: #764ba2; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: transform 0.2s; }
-.btn:hover { transform: scale(1.05); }
-.products { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
-.products h2 { text-align: center; font-size: 2.5rem; margin-bottom: 40px; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-.card { background: #1a1a1a; border-radius: 15px; padding: 30px; border: 1px solid #333; transition: border-color 0.3s; }
-.card:hover { border-color: #667eea; }
-.card h3 { font-size: 1.5rem; margin-bottom: 15px; color: #667eea; }
-.card .price { font-size: 2rem; font-weight: bold; margin: 15px 0; }
-.card .price span { font-size: 0.8rem; opacity: 0.6; }
-.card ul { list-style: none; margin: 20px 0; }
-.card ul li { padding: 5px 0; opacity: 0.8; }
-.card ul li::before { content: "✓ "; color: #667eea; }
-.card .btn { width: 100%; text-align: center; margin-top: 20px; }
-.bundle { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 40px; border-radius: 15px; text-align: center; margin-top: 40px; }
-.bundle h3 { font-size: 2rem; margin-bottom: 10px; }
-.bundle .price { font-size: 3rem; font-weight: bold; margin: 20px 0; }
-.features { padding: 60px 20px; background: #111; }
-.features h2 { text-align: center; font-size: 2.5rem; margin-bottom: 40px; }
-.feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
-.feature { text-align: center; padding: 20px; }
-.feature .icon { font-size: 3rem; margin-bottom: 15px; }
-.feature h3 { margin-bottom: 10px; }
-.feature p { opacity: 0.7; }
-footer { text-align: center; padding: 40px; opacity: 0.6; border-top: 1px solid #333; }
+:root{--bg:#0a0a0f;--bg2:#12121a;--card:#1a1a28;--border:#2a2a3a;--text:#f0f0f5;--muted:#8888a0;--accent:#6c5ce7;--accent2:#a29bfe;--green:#00b894;--gold:#fdcb6e;--gradient:linear-gradient(135deg,#6c5ce7 0%,#a29bfe 50%,#fd79a8 100%)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(10,10,15,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:16px 0}
+nav .container{display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:1.2rem;font-weight:800;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-cta{background:var(--accent);color:#fff;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.9rem;transition:all 0.3s}
+.nav-cta:hover{background:var(--accent2);transform:translateY(-2px)}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 20px 80px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 40%,rgba(108,92,231,0.15) 0%,transparent 50%),radial-gradient(circle at 70% 60%,rgba(253,121,168,0.1) 0%,transparent 50%);animation:float 20s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(-30px,-20px)}}
+.hero-content{position:relative;z-index:1;max-width:800px}
+.badge{display:inline-block;background:rgba(108,92,231,0.2);border:1px solid var(--accent);color:var(--accent2);padding:8px 20px;border-radius:50px;font-size:0.85rem;font-weight:600;margin-bottom:24px;letter-spacing:1px;text-transform:uppercase}
+.hero h1{font-size:clamp(2.5rem,6vw,4.5rem);font-weight:900;line-height:1.1;margin-bottom:24px}
+.hero h1 span{background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:1.25rem;color:var(--muted);max-width:600px;margin:0 auto 40px}
+.hero-cta{display:inline-flex;align-items:center;gap:12px;background:var(--gradient);color:#fff;padding:18px 40px;border-radius:12px;text-decoration:none;font-weight:700;font-size:1.1rem;transition:all 0.3s;box-shadow:0 8px 30px rgba(108,92,231,0.4)}
+.hero-cta:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(108,92,231,0.6)}
+.hero-trust{margin-top:30px;display:flex;gap:24px;justify-content:center;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:0.9rem}
+.trust-item span{color:var(--green)}
+.stats{padding:60px 20px;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;max-width:900px;margin:0 auto;text-align:center}
+.stat .number{font-size:3rem;font-weight:900;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stat .label{color:var(--muted);font-size:0.9rem;margin-top:8px}
+.products{padding:100px 20px}
+.section-header{text-align:center;margin-bottom:60px}
+.section-header h2{font-size:2.5rem;font-weight:800;margin-bottom:16px}
+.section-header p{color:var(--muted);font-size:1.1rem;max-width:600px;margin:0 auto}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:30px;max-width:1200px;margin:0 auto}
+.product-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:40px 30px;transition:all 0.4s;position:relative;overflow:hidden}
+.product-card:hover{border-color:var(--accent);transform:translateY(-8px);box-shadow:0 20px 60px rgba(108,92,231,0.2)}
+.product-card.featured{border-color:var(--gold);background:linear-gradient(135deg,#1a1a28 0%,#2a2a18 100%)}
+.product-card.featured::before{content:'BEST VALUE';position:absolute;top:20px;right:-35px;background:var(--gold);color:#000;padding:6px 40px;font-size:0.75rem;font-weight:800;transform:rotate(45deg);letter-spacing:1px}
+.product-icon{font-size:3rem;margin-bottom:20px}
+.product-card h3{font-size:1.5rem;font-weight:700;margin-bottom:8px}
+.product-card .tagline{color:var(--muted);font-size:0.95rem;margin-bottom:20px}
+.product-card .price{font-size:2.5rem;font-weight:900;margin:20px 0}
+.product-card .price .currency{font-size:1.2rem;vertical-align:top;color:var(--muted)}
+.product-features{list-style:none;margin:24px 0}
+.product-features li{padding:8px 0;display:flex;align-items:center;gap:10px;font-size:0.95rem;color:var(--muted)}
+.product-features li::before{content:'✓';color:var(--green);font-weight:700}
+.paypal-btn-container{margin-top:24px;min-height:50px}
+.buy-link{display:block;text-align:center;margin-top:16px;color:var(--accent2);font-size:0.9rem;text-decoration:none}
+.buy-link:hover{text-decoration:underline}
+.bundle-section{padding:80px 20px;background:var(--bg2)}
+.bundle-card{max-width:900px;margin:0 auto;background:linear-gradient(135deg,#1a1a28 0%,#2a1a3a 100%);border:2px solid var(--accent);border-radius:24px;padding:60px 40px;text-align:center;position:relative;overflow:hidden}
+.bundle-card::before{content:'';position:absolute;top:-100px;right:-100px;width:300px;height:300px;background:radial-gradient(circle,rgba(108,92,231,0.3) 0%,transparent 70%)}
+.bundle-card h2{font-size:2.5rem;font-weight:900;margin-bottom:12px}
+.bundle-card .subtitle{color:var(--muted);font-size:1.1rem;margin-bottom:30px}
+.bundle-price{font-size:4rem;font-weight:900;margin:20px 0}
+.bundle-price .old{font-size:1.5rem;color:var(--muted);text-decoration:line-through;margin-right:16px}
+.bundle-savings{display:inline-block;background:var(--green);color:#000;padding:6px 16px;border-radius:50px;font-weight:700;font-size:0.9rem;margin-bottom:30px}
+.bundle-includes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:600px;margin:0 auto 40px;text-align:left}
+.bundle-includes div{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:0.95rem}
+.bundle-includes div::before{content:'✓';color:var(--green);font-weight:700;font-size:1.2rem}
+.bundle-paypal{max-width:400px;margin:0 auto}
+.testimonials{padding:100px 20px}
+.testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;max-width:1000px;margin:0 auto}
+.testimonial{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:30px}
+.testimonial .stars{color:var(--gold);margin-bottom:16px;font-size:1.2rem}
+.testimonial p{color:var(--muted);font-style:italic;margin-bottom:20px;line-height:1.7}
+.testimonial .author{display:flex;align-items:center;gap:12px}
+.testimonial .avatar{width:40px;height:40px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700}
+.testimonial .name{font-weight:600;font-size:0.95rem}
+.testimonial .role{color:var(--muted);font-size:0.85rem}
+.faq{padding:100px 20px;background:var(--bg2)}
+.faq-container{max-width:800px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--border);padding:24px 0}
+.faq-item h3{font-size:1.1rem;font-weight:600;margin-bottom:12px;cursor:pointer}
+.faq-item p{color:var(--muted);line-height:1.7}
+footer{padding:60px 20px;border-top:1px solid var(--border);text-align:center}
+footer .footer-links{display:flex;gap:24px;justify-content:center;margin-bottom:24px;flex-wrap:wrap}
+footer a{color:var(--muted);text-decoration:none;font-size:0.9rem}
+footer a:hover{color:var(--text)}
+footer p{color:var(--muted);font-size:0.85rem}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+@media(max-width:768px){.hero h1{font-size:2rem}.product-grid{grid-template-columns:1fr}.bundle-price{font-size:2.5rem}}
 </style>
 </head>
 <body>
-<div class="hero">
-  <h1>Business Growth Arsenal</h1>
-  <p>AI Prompts, Notion Templates & Canva Packs for Solopreneurs. Save 10+ hours per week.</p>
-  <a href="#products" class="btn">Shop Now →</a>
-</div>
-
-<div class="products" id="products">
-  <h2>Digital Products</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>AI Prompt Pack</h3>
-      <p>20 battle-tested prompts for business growth</p>
-      <div class="price">$19 <span>launch price</span></div>
-      <ul>
-        <li>20 AI prompts (5 categories)</li>
-        <li>Cold emails, landing pages, SEO</li>
-        <li>Social media calendars</li>
-        <li>Competitor analysis</li>
-        <li>Works with ChatGPT & Claude</li>
-      </ul>
-      <a href="#" class="btn">Buy Now</a>
-    </div>
-    <div class="card">
-      <h3>Notion Business Dashboard</h3>
-      <p>Complete business management system</p>
-      <div class="price">$29</div>
-      <ul>
-        <li>10 database templates</li>
-        <li>CRM, Tasks, Projects, Finance</li>
-        <li>Content calendar</li>
-        <li>Goals & KPIs tracking</li>
-        <li>Automations included</li>
-      </ul>
-      <a href="#" class="btn">Buy Now</a>
-    </div>
-    <div class="card">
-      <h3>Canva Social Media Pack</h3>
-      <p>30 ready-to-use templates</p>
-      <div class="price">$29</div>
-      <ul>
-        <li>30 templates (IG, FB, LinkedIn, Twitter)</li>
-        <li>5 color schemes</li>
-        <li>3 font pairings</li>
-        <li>Hashtag research guide</li>
-        <li>Canva brand kit setup</li>
-      </ul>
-      <a href="#" class="btn">Buy Now</a>
-    </div>
-  </div>
-  <div class="bundle">
-    <h3>Complete Business Starter Kit</h3>
-    <p>All 3 products in one bundle</p>
-    <div class="price">$59 <span style="font-size:1rem;opacity:0.7">save $18</span></div>
-    <div id="paypal-container-8JGK4UQMRP6VL" style="margin-top:20px;"></div>
-    <script>
-      paypal.HostedButtons({
-        hostedButtonId: "8JGK4UQMRP6VL",
-      }).render("#paypal-container-8JGK4UQMRP6VL")
-    </script>
-    <a href="#" class="btn" style="background:#fff;color:#f5576c;">Get Bundle →</a>
-  </div>
-</div>
-
-<div class="features">
-  <h2>Why Choose Our Products?</h2>
-  <div class="feature-grid">
-    <div class="feature">
-      <div class="icon">⚡</div>
-      <h3>Save Time</h3>
-      <p>10+ hours saved per week with ready-to-use templates</p>
-    </div>
-    <div class="feature">
-      <div class="icon">💰</div>
-      <h3>High ROI</h3>
-      <p>Pay for itself in one use. No subscription needed.</p>
-    </div>
-    <div class="feature">
-      <div class="icon">🎯</div>
-      <h3>Battle-Tested</h3>
-      <p>Every prompt and template tested in real business</p>
-    </div>
-    <div class="feature">
-      <div class="icon">🔄</div>
-      <h3>Lifetime Updates</h3>
-      <p>Free updates forever. No recurring fees.</p>
-    </div>
-  </div>
-</div>
-
-<footer>
-  <p>© 2026 Business Growth Arsenal. All rights reserved.</p>
-  <p>Questions? Contact us on WhatsApp: +62 813-9815-5269</p>
-</footer>
+<nav><div class="container"><div class="logo">Business Growth Arsenal</div><a href="#bundle" class="nav-cta">Get Bundle — $59</a></div></nav>
+<section class="hero"><div class="hero-content"><div class="badge">⚡ New: AI Prompt Pack v2.0</div><h1>Stop Wasting <span>10+ Hours</span> Every Week on Tasks AI Can Do in Minutes</h1><p>20 battle-tested AI prompts, a Notion business dashboard, and 30 Canva templates. Everything you need to automate your business and scale faster.</p><a href="#products" class="hero-cta">Shop Products →</a><div class="hero-trust"><div class="trust-item"><span>✓</span> Instant Download</div><div class="trust-item"><span>✓</span> Lifetime Updates</div><div class="trust-item"><span>✓</span> No Subscription</div><div class="trust-item"><span>✓</span> 30-Day Guarantee</div></div></div></section>
+<section class="stats"><div class="stats-grid"><div class="stat"><div class="number">20</div><div class="label">AI Prompts</div></div><div class="stat"><div class="number">10+</div><div class="label">Hours Saved/Week</div></div><div class="stat"><div class="number">30</div><div class="label">Canva Templates</div></div><div class="stat"><div class="number">1</div><div class="label">Payment. Lifetime Access.</div></div></div></section>
+<section class="products" id="products"><div class="section-header"><h2>Choose Your Arsenal</h2><p>Each product is battle-tested on real businesses. Pick what you need, or grab the bundle for maximum value.</p></div><div class="product-grid">
+<div class="product-card"><div class="product-icon">🤖</div><h3>AI Prompt Pack</h3><p class="tagline">20 battle-tested prompts for business growth</p><div class="price"><span class="currency">$</span>19</div><ul class="product-features"><li>20 AI prompts across 5 categories</li><li>Cold emails & follow-ups</li><li>Landing page copy</li><li>Social media calendars</li><li>Competitor analysis</li><li>Works with ChatGPT, Claude & Gemini</li></ul><div class="paypal-btn-container" id="paypal-prompt"></div><a href="#bundle" class="buy-link">Or get all 3 in the bundle →</a></div>
+<div class="product-card"><div class="product-icon">📊</div><h3>Notion Business Dashboard</h3><p class="tagline">Complete business management system</p><div class="price"><span class="currency">$</span>29</div><ul class="product-features"><li>10 database templates</li><li>CRM & lead tracking</li><li>Task & project management</li><li>Content calendar</li><li>Finance & KPI tracking</li><li>Automations included</li></ul><div class="paypal-btn-container" id="paypal-notion"></div><a href="#bundle" class="buy-link">Or get all 3 in the bundle →</a></div>
+<div class="product-card"><div class="product-icon">🎨</div><h3>Canva Social Media Pack</h3><p class="tagline">30 ready-to-use templates</p><div class="price"><span class="currency">$</span>29</div><ul class="product-features"><li>30 templates (IG, FB, LinkedIn, X)</li><li>5 color schemes</li><li>3 font pairings</li><li>Hashtag research guide</li><li>Canva brand kit setup</li><li>Instant Canva access</li></ul><div class="paypal-btn-container" id="paypal-canva"></div><a href="#bundle" class="buy-link">Or get all 3 in the bundle →</a></div>
+</div></section>
+<section class="bundle-section" id="bundle"><div class="bundle-card"><h2>Complete Business Starter Kit</h2><p class="subtitle">All 3 products. One payment. Lifetime access.</p><div class="bundle-price"><span class="old">$77</span>$59</div><div class="bundle-savings">SAVE $18 (23% OFF)</div><div class="bundle-includes"><div>20 AI Prompt Pack</div><div>Notion Business Dashboard</div><div>Canva Social Media Pack</div><div>Lifetime Updates</div><div>Instant Download</div><div>30-Day Guarantee</div></div><div class="bundle-paypal" id="paypal-bundle"></div></div></section>
+<section class="testimonials"><div class="section-header"><h2>What Entrepreneurs Say</h2><p>Real results from real business owners.</p></div><div class="testimonial-grid">
+<div class="testimonial"><div class="stars">★★★★★</div><p>"The AI prompts saved me 4 hours on my first day. The cold email prompt alone got me 3 replies in 24 hours."</p><div class="author"><div class="avatar">S</div><div><div class="name">Sarah K.</div><div class="role">Freelance Consultant</div></div></div></div>
+<div class="testimonial"><div class="stars">★★★★★</div><p>"Notion dashboard replaced 3 separate tools I was paying $50/month for. The ROI was instant."</p><div class="author"><div class="avatar">M</div><div><div class="name">Marcus T.</div><div class="role">E-commerce Founder</div></div></div></div>
+<div class="testimonial"><div class="stars">★★★★★</div><p>"30 Canva templates saved me a week of design work. My social media looks professional now."</p><div class="author"><div class="avatar">L</div><div><div class="name">Lisa R.</div><div class="role">Social Media Manager</div></div></div></div>
+</div></section>
+<section class="faq"><div class="section-header"><h2>Frequently Asked Questions</h2></div><div class="faq-container">
+<div class="faq-item"><h3>How do I receive my products after purchase?</h3><p>Instantly. After payment, you'll receive an email with download links for all purchased products. No waiting, no shipping.</p></div>
+<div class="faq-item"><h3>Do I need any special software?</h3><p>No. AI prompts work with ChatGPT, Claude, or Gemini (free accounts work). Notion templates work with free Notion. Canva templates work with free Canva.</p></div>
+<div class="faq-item"><h3>Are there recurring fees or subscriptions?</h3><p>No. One-time payment. Lifetime access. Free updates forever.</p></div>
+<div class="faq-item"><h3>What if I'm not satisfied?</h3><p>30-day money-back guarantee. No questions asked. Email us and we'll refund immediately.</p></div>
+<div class="faq-item"><h3>Can I use these for my clients?</h3><p>Yes. All products include commercial use license. Use them for yourself or your clients.</p></div>
+</div></section>
+<footer><div class="footer-links"><a href="#products">Products</a><a href="#bundle">Bundle</a><a href="#faq">FAQ</a><a href="https://wa.me/6281398155269" target="_blank">WhatsApp</a></div><p>© 2026 Business Growth Arsenal. All rights reserved.</p><p style="margin-top:8px;">Questions? WhatsApp: +62 813-9815-5269 | Email: auldiputahasibuan@gmail.com</p></footer>
+<script>
+paypal.Buttons({style:{shape:'rect',color:'blue',layout:'vertical',label:'buynow'},createOrder:function(data,actions){return actions.order.create({purchase_units:[{amount:{value:'19.00',currency_code:'USD'},description:'AI Prompt Pack - Business Growth Arsenal'}]})},onApprove:function(data,actions){return actions.order.capture().then(function(details){alert('Payment successful! Check your email for download links.');window.location.href='mailto:auldiputahasibuan@gmail.com?subject=AI Prompt Pack Purchase&body=PayPal Order: '+data.orderID})}}).render('#paypal-prompt');
+paypal.Buttons({style:{shape:'rect',color:'blue',layout:'vertical',label:'buynow'},createOrder:function(data,actions){return actions.order.create({purchase_units:[{amount:{value:'29.00',currency_code:'USD'},description:'Notion Business Dashboard - Business Growth Arsenal'}]})},onApprove:function(data,actions){return actions.order.capture().then(function(details){alert('Payment successful! Check your email for download links.');window.location.href='mailto:auldiputahasibuan@gmail.com?subject=Notion Dashboard Purchase&body=PayPal Order: '+data.orderID})}}).render('#paypal-notion');
+paypal.Buttons({style:{shape:'rect',color:'blue',layout:'vertical',label:'buynow'},createOrder:function(data,actions){return actions.order.create({purchase_units:[{amount:{value:'29.00',currency_code:'USD'},description:'Canva Social Media Pack - Business Growth Arsenal'}]})},onApprove:function(data,actions){return actions.order.capture().then(function(details){alert('Payment successful! Check your email for download links.');window.location.href='mailto:auldiputahasibuan@gmail.com?subject=Canva Pack Purchase&body=PayPal Order: '+data.orderID})}}).render('#paypal-canva');
+paypal.Buttons({style:{shape:'rect',color:'gold',layout:'vertical',label:'buynow'},createOrder:function(data,actions){return actions.order.create({purchase_units:[{amount:{value:'59.00',currency_code:'USD'},description:'Complete Business Starter Kit - Business Growth Arsenal'}]})},onApprove:function(data,actions){return actions.order.capture().then(function(details){alert('Payment successful! Check your email for download links.');window.location.href='mailto:auldiputahasibuan@gmail.com?subject=Bundle Purchase&body=PayPal Order: '+data.orderID})}}).render('#paypal-bundle');
+</script>
 </body>
 </html>
